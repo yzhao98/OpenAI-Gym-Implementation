@@ -90,31 +90,6 @@ for i_episode in range(20):
             break
 env.close()
 ```
-
-env = gym.make (“CartPole-v0”)
-
-i_episode in range(20):
-
-观察= env.reset ()
-
-对于(100)范围内的t:
-
-env.render ()
-
-打印(观察)
-
-action = env.action_space.sample ()
-
-观察，奖励，完成，信息=环境。
-
-如果完成:
-
-打印(“在{}timesteps之后完成的片段”.format(t+1))
-
-打破
-
-env.close ()
-
 这应该会给出一个视频和如下输出。您应该能够看到重置**resets**发生在何处。
 
 ![](fig/cartpole-yes-reset.mp4)
